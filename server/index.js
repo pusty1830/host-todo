@@ -23,6 +23,7 @@ const Todo = mongoose.model("Todo", todoSchema);
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 // Routes
 
